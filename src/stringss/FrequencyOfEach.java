@@ -1,5 +1,7 @@
 package stringss;
 
+import java.util.HashMap;
+
 public class FrequencyOfEach {
 public static void main(String[] args) {
 	String s="heloo pujitha hi";
@@ -11,9 +13,17 @@ public static void main(String[] args) {
 	}
 	for(char ch:c) {
 		if(asc[ch]>0) {
-			System.out.println(ch +":"+asc[ch]);
+			System.out.print(ch +" : "+asc[ch]);
 			asc[ch]=0;
 		}
 	}
+	System.out.println();
+	HashMap<Character,Integer>map=new HashMap<Character,Integer>();
+	for(int i=0;i<=s.length()-1;i++) {
+		map.put(s.charAt(i), map.getOrDefault(s.charAt(i),0)+1);
+	}
+
+	System.out.println(map);
 }
 }
+

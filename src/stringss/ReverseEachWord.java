@@ -17,6 +17,16 @@ public static void main(String[] args) {
 	}
 	System.out.println(reversedString);
 	
+//	for (int j = 0; j < words.length; j++) {
+//	    String w = words[j];
+//	    System.out.println(w);
+//	    String reverseWord = "";  // reversing each word
+//	    
+//	    for (int i = w.length() - 1; i >= 0; i--) {
+//	        reverseWord = reverseWord + w.charAt(i);
+//	    }
+//	    
+//	}
 	
 }
 }

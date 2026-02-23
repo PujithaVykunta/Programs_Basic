@@ -7,6 +7,7 @@ public static void main(String[] args) {
 	
 	System.out.println(substring+":"+substring.length());
 }
+//longest substring without repeating its characters
 static String longestSubstring(String s) {
 	int maxLen=0;
 	String longest="";

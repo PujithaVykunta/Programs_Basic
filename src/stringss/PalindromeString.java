@@ -15,5 +15,18 @@ public static void main(String[] args) {
 	else {
 		System.out.println("not a palindrome");
 	}
+	
+	System.out.println(isPalindrome(s));
+}
+public static boolean isPalindrome(String s) {
+	
+	int left=0;
+	int right=s.length()-1;
+	while(s.charAt(right)!=s.charAt(left)) {
+		return false;
+	}
+	right--;
+	left++;
+	return true;
 }
 }

@@ -19,10 +19,10 @@ public static void main(String[] args) {
 		System.out.print(c[i]);
 		i++;
 	}
-	/*
+	
 	String arr[]=s.split(" ");
 	System.out.println(arr[arr.length-2]);
-	*/
+	
 	
 }
 }

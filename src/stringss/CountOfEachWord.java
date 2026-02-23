@@ -14,20 +14,20 @@ public static void main(String[] args) {
 		map.put(s1, map.getOrDefault(s1, 0)+1);
 	}
 	for(Map.Entry<String,Integer>entries:map.entrySet()) {
-		if(map.containsKey(entries.getKey())) {
+		
 			System.out.println(entries.getKey()+" :"+entries.getValue());
-		}
+		
 	}
 	char a[]=s.toCharArray();
-HashMap<Character,Integer>map1=new HashMap<Character,Integer>();
+   HashMap<Character,Integer>map1=new HashMap<Character,Integer>();
 	
 	for (char s1 : a) {
 		map1.put(s1, map1.getOrDefault(s1, 0)+1);
 	}
 	for(Map.Entry<Character,Integer>entries:map1.entrySet()) {
-		if(map1.containsKey(entries.getKey())) {
+		
 			System.out.println(entries.getKey()+" :"+entries.getValue());
-		}
+		
 		
 	}
 }

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class CountWord {
 public static void main(String[] args) {
-	String s="hello hi hello bye";
+	String s="hello hi hello bye bye";
 	 String word[]=s.split(" ");
 	 
 	 HashMap<String,Integer>map=new HashMap<String, Integer>();
@@ -15,10 +15,10 @@ public static void main(String[] args) {
 	 }
 	 
 	 for(Map.Entry<String,Integer>entries:map.entrySet()) {
-		 if(entries.getValue()>0) {
+		 
 			 System.out.println(entries.getKey()+":"+entries.getValue());
 			 
-		 }
+		 
 	 }
 }
 }

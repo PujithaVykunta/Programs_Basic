@@ -3,19 +3,19 @@ package stringss;
 public class FibonacciRecursion {
 public static void main(String[] args) {
 	
-	System.out.println(fibonacci(8));
+	int n=10;
+	for(int i=0;i<n;i++) {
+		System.out.print(fibonacci(i)+" ");
+	}
 }
 public static long fibonacci(int n) {
 	
-	if(n<=1) {
-		return n;
+	if(n==0) {
+		return 0;
 	}
-	int first=0,second=1;
-	for(int i=2;i<=n;i++) {
-		int temp=first+second;
-		first=second;
-		second=temp;
+	if(n==1) {
+		return 1;
 	}
-	return second;
+	return fibonacci(n-1)+fibonacci(n-2);
 }
 }
